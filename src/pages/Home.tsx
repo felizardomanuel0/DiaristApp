@@ -26,7 +26,7 @@ const Home: React.FC = () => {
                   alt="Diarista"
                   className="diarista-image"
                 />
-                <h3 className="diarista-name">Nome do diarista</h3>
+                <h3 className="diarista-name">Diarista 01</h3>
               </IonCardContent>
             </IonCard>
             <IonCard className="diarista-card" style={{ backgroundColor: '#E1F5FE' }}>
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
                   alt="Diarista"
                   className="diarista-image"
                 />
-                <h3 className="diarista-name">Nome do diarista</h3>
+                <h3 className="diarista-name">Diarista 02</h3>
               </IonCardContent>
             </IonCard>
           </div>
