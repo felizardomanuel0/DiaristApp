@@ -3,6 +3,7 @@ import React from 'react';
 import { IonContent, IonPage, IonInput, IonButton, IonImg, IonTitle, IonHeader, IonToolbar, IonItem, IonIcon, IonCard, IonCardContent } from '@ionic/react';
 import './Home.css';
 import { searchOutline } from 'ionicons/icons';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
     return (
@@ -18,7 +19,9 @@ const Home: React.FC = () => {
             <IonInput placeholder="Pesquisar por diarista" />
           </IonItem>
   
+        
           <div className="card-container">
+         <Link to="/diarista/1">
             <IonCard className="diarista-card" style={{ backgroundColor: '#FFF8E1' }}>
               <IonCardContent className="card-content">
                 <IonImg
@@ -26,17 +29,18 @@ const Home: React.FC = () => {
                   alt="Diarista"
                   className="diarista-image"
                 />
-                <h3 className="diarista-name">Diarista 01</h3>
+                <h3 className="diarista-name">João Simango</h3>
               </IonCardContent>
             </IonCard>
-            <IonCard className="diarista-card" style={{ backgroundColor: '#E1F5FE' }}>
+          </Link>  
+            <IonCard className="diarista-card" style={{ backgroundColor: '#E1F5FE' }} routerLink="/login">
               <IonCardContent className="card-content">
                 <IonImg
                   src="../src/assets/images/Perfil.png"
                   alt="Diarista"
                   className="diarista-image"
                 />
-                <h3 className="diarista-name">Diarista 02</h3>
+                <h3 className="diarista-name">Odete Valeria</h3>
               </IonCardContent>
             </IonCard>
           </div>

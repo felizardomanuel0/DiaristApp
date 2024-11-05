@@ -18,6 +18,9 @@ import WelcomeScreen from './pages/WelcomeScreen';
 import Registro from './pages/Registro';
 import Login from './pages/Login';
 import Home from './pages/Home';
+import Contacto from './pages/Contacto';
+import Habilidades from './pages/Habilidade';
+import Desc from './pages/Desc';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -65,6 +68,15 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/home">
           <Home />
+        </Route>
+        
+        <Route path="/diarista/:id" component={Contacto} />
+      
+        <Route exact path="/habilidade">
+          <Habilidades />
+        </Route>
+        <Route exact path="/desc">
+          <Desc />
         </Route>
 
         
