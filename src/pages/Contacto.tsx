@@ -12,16 +12,18 @@ import {
   IonLabel,
 } from '@ionic/react';
 import { arrowBackOutline } from 'ionicons/icons';
+import { useHistory } from 'react-router-dom';
 import './Contacto.css';
 
 const Contacto: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<'descricao' | 'habilidade' | 'contactos'>('descricao');
+  const history = useHistory();
 
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color="warning">
-          <IonButton slot="start" fill="clear">
+          <IonButton slot="start" fill="clear" onClick={() => history.goBack()}>
             <IonIcon icon={arrowBackOutline} />
           </IonButton>
           <IonTitle>O diarista</IonTitle>

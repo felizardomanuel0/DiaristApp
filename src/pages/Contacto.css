@@ -30,4 +30,7 @@
   .call-button {
     margin-top: 20px;
   }
-  
+
+  ion-segment {
+    background: no-repeat;
+}

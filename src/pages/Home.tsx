@@ -4,13 +4,19 @@ import { IonContent, IonPage, IonInput, IonButton, IonImg, IonTitle, IonHeader, 
 import './Home.css';
 import { searchOutline } from 'ionicons/icons';
 import { Link } from 'react-router-dom';
+import { arrowBackOutline } from 'ionicons/icons';
+import { useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
+    const history = useHistory();
     return (
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle>Encontre o seu Diarista</IonTitle>
+          <IonTitle>Encontre o seu Diarista</IonTitle>
+            <IonButton slot="start" fill="clear" onClick={() => history.goBack()}>
+            <IonIcon icon={arrowBackOutline} />
+          </IonButton>
           </IonToolbar>
         </IonHeader>
         <IonContent className="ion-padding">
