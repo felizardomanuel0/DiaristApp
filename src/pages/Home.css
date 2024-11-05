@@ -1,0 +1,32 @@
+.search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .diarista-card {
+    flex: 1;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .diarista-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .diarista-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
