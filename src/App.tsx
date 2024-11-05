@@ -18,9 +18,12 @@ import WelcomeScreen from './pages/WelcomeScreen';
 import Registro from './pages/Registro';
 import Login from './pages/Login';
 import Home from './pages/Home';
+<<<<<<< HEAD
 import Contacto from './pages/Contacto';
 import Habilidades from './pages/Habilidade';
 import Desc from './pages/Desc';
+=======
+>>>>>>> 214343e (construcao das paginas)
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -69,6 +72,7 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
+<<<<<<< HEAD
         
         <Route path="/diarista/:id" component={Contacto} />
       
@@ -78,6 +82,8 @@ const App: React.FC = () => (
         <Route exact path="/desc">
           <Desc />
         </Route>
+=======
+>>>>>>> 214343e (construcao das paginas)
 
         
         {/* Redireciona a rota raiz para a tela de boas-vindas */}

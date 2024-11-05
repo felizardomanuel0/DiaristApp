@@ -2,7 +2,11 @@
     margin-bottom: 20px;
   }
   
+<<<<<<< HEAD
  .card-container {
+=======
+  .card-container {
+>>>>>>> 214343e (construcao das paginas)
     display: flex;
     gap: 10px;
   }
